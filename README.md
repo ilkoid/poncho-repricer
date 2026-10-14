@@ -23,6 +23,7 @@
 
 ```bash
 cp .env.example .env            # заполнить ключи (значения — как в poncho-ai/.env)
+./create-test-db.sh             # создать тестовую БД repricer_data_test (лог: logs/)
 cd cmd/repricer && go run .     # скелет: загрузка и диагностика конфигурации
 cd web && npm install && npm run dev
 ```
