@@ -1,0 +1,10 @@
+# Конфигурация poncho-repricer.
+# Секреты здесь не хранятся: значения ${VAR} подставляются из .env (AGENTS.md §6).
+
+storage:
+  # Для агентской работы — только *_test; продовый конфиг создаётся отдельно.
+  pg_database: repricer_data_test
+
+wb:
+  # Ключ Content API (записи цен); имена — как в ../poncho-ai/.env.example.
+  api_key_env: WB_API_CONTENT_KEY

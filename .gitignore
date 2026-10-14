@@ -1,0 +1,42 @@
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Go workspace (локальная подстановка соседних poncho-ai / poncho-oz)
+go.work
+go.work.sum
+
+# Go build artifacts
+*.exe
+*.exe~
+*.test
+*.out
+coverage.*
+
+# Node / frontend
+web/node_modules/
+web/dist/
+
+# Logs & local artifacts
+*.log
+logs/
+reports/
+
+# Local binaries
+/repricer
+cmd/repricer/repricer
+
+# IDE / OS
+.idea/
+.vscode/
+.claude/
+.zcode/
+*.swp
+.DS_Store
+.DS_Store?
+._*
+
+# Temporary
+tmp/
+temp/
